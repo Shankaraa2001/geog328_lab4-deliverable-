@@ -1,0 +1,62 @@
+<!-- Declaration of the HTML5 document type -->
+<!DOCTYPE html>
+
+<!-- Opening of the HTML document -->
+<html>
+
+<!-- Head section containing metadata and links to external resources -->
+<head>
+    <!-- Character set declaration for UTF-8 encoding -->
+    <meta charset="utf-8">
+
+    <!-- Title of the HTML document -->
+    <title>Interactive Web Mapping</title>
+
+    <!-- Link to an external stylesheet (style.css) for styling the HTML content -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Defer the execution of the JavaScript file (map.js) until HTML parsing is complete -->
+    <script src="map.js" defer></script>
+
+    <!-- Viewport configuration for responsive design -->
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <!-- Link to the Mapbox GL JS stylesheet -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
+
+    <!-- Link to the Mapbox GL JS library -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
+
+    <!-- Internal style tag (currently empty) -->
+    <style>
+    </style>
+</head>
+
+<!-- Body section containing the visible content of the HTML document -->
+<body>
+    <!-- Container for the Mapbox GL JS map with the ID 'map' -->
+    <div id="map"></div>
+
+    <!-- Container for map overlay with the class 'map-overlay' and ID 'features' -->
+    <div class='map-overlay' id='features'>
+        <!-- Heading with text 'US population density' -->
+        <h2>US population density</h2>
+
+        <!-- Container for text description with ID 'text-description' -->
+        <div id='text-description'>
+            <!-- Paragraph with initial text 'Hover over a state!' -->
+            <p>Hover over a state!</p>
+        </div>
+    </div>
+
+    <!-- Container for map legend with class 'map-overlay' and ID 'legend' -->
+    <div class='map-overlay' id='legend'></div>
+
+    <!-- Script tag for JavaScript code (currently empty) -->
+    <script>
+    </script>
+
+</body>
+
+<!-- Closing of the HTML document -->
+</html>
